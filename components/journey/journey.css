@@ -1,0 +1,238 @@
+.experience-container {
+  margin: 20px 0px 0px 0px;
+
+  position: relative;
+  height: 100vh;
+}
+
+.experience-container-bubbles {
+  top: -100vh;
+  position: relative;
+
+  height: 100%;
+  overflow: hidden;
+}
+.experience-container-bubbles div {
+  height: 340px;
+  width: 340px;
+  z-index: 10;
+  border-radius: 50%;
+  background-color: #b7cff3;
+  box-shadow: 0px -1px 1px grey;
+}
+.e-1 {
+  position: absolute;
+  top: 0%;
+  left: -15%;
+}
+.e-8 {
+  position: absolute;
+  top: 0%;
+  right: -15%;
+  z-index: 5 !important;
+}
+
+.e-2 {
+  position: absolute;
+  bottom: -1%;
+  left: -5%;
+  border-bottom-left-radius: 0% !important;
+  border-bottom-right-radius: 0% !important;
+}
+.e-7 {
+  position: absolute;
+  bottom: -1%;
+  right: -5%;
+  z-index: 5 !important;
+  border-bottom-left-radius: 0% !important;
+  border-bottom-right-radius: 0% !important;
+}
+
+.e-3 {
+  position: absolute;
+  bottom: -10%;
+  left: 15%;
+}
+.e-6 {
+  position: absolute;
+  bottom: -10%;
+
+  right: 15%;
+}
+
+.e-4 {
+  position: absolute;
+  bottom: -15%;
+  left: 28%;
+}
+.e-5 {
+  position: absolute;
+  bottom: -15%;
+  right: 28%;
+}
+
+.e-9 {
+  position: absolute;
+  top: 20%;
+  left: -15%;
+}
+.e-10 {
+  position: absolute;
+  top: 20%;
+  right: -15%;
+}
+
+.e-11 {
+  position: absolute;
+  bottom: -15%;
+  left: 40%;
+}
+.e-12 {
+  position: absolute;
+  top: 50%;
+  left: -15%;
+}
+
+.e-13 {
+  position: absolute;
+  top: 50%;
+  right: -15%;
+}
+
+.e-14 {
+  position: absolute;
+  bottom: -10%;
+  left: 7%;
+}
+
+.e-15 {
+  position: absolute;
+  bottom: -10%;
+  right: 7%;
+}
+
+.experience-container-main {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff !important;
+  border-radius: 0px !important;
+}
+
+.experience-container-details {
+  z-index: 20;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.experience-container-details h2 {
+  font-size: 50px;
+  margin-top: 12vh;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #182d6c;
+  text-transform: capitalize;
+  font-family: "Courier Prime", monospace;
+}
+
+.experience-container-details p {
+  margin: 2vh auto;
+  width: 60%;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 600;
+  opacity: 0.6;
+  font-size: 20px;
+  margin-bottom: 34px;
+  font-family: "Inter", sans-serif;
+}
+
+.experience-container-details a {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 6px 10px;
+  color: #1e3a8a;
+  z-index: 200;
+  font-size: 20px;
+  transition: 0.2s ease;
+  border: 1px solid #1e3a8a;
+  margin: 2vh auto;
+}
+.experience-container-details a:hover {
+  color: #fff;
+  transform: scale(1.1);
+
+  cursor: pointer;
+  background-color: #1e3a8a;
+}
+.experience-container-train {
+  z-index: 20;
+  width: 100%;
+  padding: 30px 25px;
+  display: none;
+  /* display: flex;*/
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+#trainImg {
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  margin: 40px 0px;
+  background-image: url("../../assets/images/journey/road.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-train button {
+  border-radius: 5px;
+  padding: 2px 5px;
+  color: #fff;
+  z-index: 300;
+  background-color: #1e3a8a;
+  font-size: 20px;
+  transition: 0.2s ease;
+  border: 1px solid #1e3a8a;
+}
+.e-close {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.carJ img {
+  width: 100px;
+  height: 90px;
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+
+  transform: rotateZ(-3deg);
+}
+.e-left {
+  position: absolute;
+  bottom: 25px;
+  padding: 10px !important;
+  right: 60px;
+}
+.e-right {
+  padding: 10px !important;
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+}
+
+@media screen and (max-width: 940px) {
+  #bubble {
+    display: none;
+  }
+}

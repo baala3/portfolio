@@ -1,0 +1,102 @@
+#experience {
+  position: absolute;
+  top: 85px;
+  left: 17px;
+  z-index: 500;
+  margin-right: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: #749ac5;
+  color: #000;
+  opacity: 0.9;
+  padding: 5px 8px;
+  border-radius: 15px;
+}
+
+#experience {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+.home-container-header-image {
+  height: 100%;
+  flex: 1;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  cursor: pointer;
+  margin: 20px;
+  transform: 0.3s ease;
+}
+
+.home-container-header-image:hover {
+  background-image: url("../../assets/images/header/meWink.png");
+  transform: scale(1.5);
+
+  cursor: pointer;
+}
+
+.home-container-header {
+  display: flex;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+.home-container-header-image {
+  height: 100%;
+  flex: 1;
+  width: 100%;
+  background-image: url("../../assets/images/header/meSmile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  cursor: pointer;
+}
+
+.home-container-header-image:hover {
+  background-image: url("../../assets/images/header/meWink.png");
+  transform: scale(1.1);
+  transform: 0.3s;
+  cursor: pointer;
+}
+
+.home-container-header-options {
+  justify-content: flex-end;
+  display: flex;
+
+  height: 100%;
+  flex: 10;
+  margin: 0px 20px;
+  align-items: center;
+}
+
+.home-container-header-options a {
+  text-decoration: none;
+  color: #182d6c;
+  margin: 10px;
+  padding: 5px;
+  text-transform: capitalize;
+  font-weight: 650;
+}
+
+.home-container-header-options a:hover {
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+  .home-container-header-options span,
+  .imag,
+  .theme button span {
+    display: none;
+  }
+}

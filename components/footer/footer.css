@@ -1,0 +1,48 @@
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 30px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  opacity: 0.9;
+  color: #182d6c;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b6b9c0;
+  margin-top: 20px;
+}
+
+.snackbar {
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  padding: 0px 10px;
+  display: none;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 5px;
+  color: #fff;
+  flex-direction: row;
+  background-color: green;
+  font-weight: 400;
+}
+
+.snackbar img {
+  height: 66px;
+  margin: 5px 10px;
+}
+
+.footer-contact {
+  float: right;
+}
+
+.footer-contact i {
+  padding: 2px;
+  margin: 4px;
+}
+.footer-contact span {
+  font-size: 13px;
+  text-decoration: none;
+  color: #000;
+}

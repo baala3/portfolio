@@ -1,0 +1,216 @@
+.skill-container-logos i {
+  font-size: 40px;
+}
+
+.skill-container-logos i:hover {
+  transform: scale(1.4);
+  transition: 0.3s;
+}
+
+.skill-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.skill-container1 {
+  flex: 1;
+  margin-left: 40px;
+}
+.dropskill-container {
+  flex: 1;
+}
+.skills-main-div {
+  box-shadow: 0px 10px 10px grey;
+  margin: 0px 20px;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.skill-container1 h2 {
+  font-size: 50px;
+  color: #182d6c;
+  text-transform: capitalize;
+  font-family: "Courier Prime", monospace;
+}
+.skill-container1 p {
+  line-height: 25px;
+  font-weight: 600;
+  opacity: 0.6;
+  font-size: 20px;
+  margin-bottom: 34px;
+  font-family: "Inter", sans-serif;
+}
+
+.skill-container-tabs {
+  padding: 7px;
+}
+.skill-container-tabs a {
+  color: #182d6c;
+  margin: 5px 2px;
+  display: inline-block;
+  padding: 6px 8px;
+  text-transform: capitalize;
+  font-weight: 650;
+  cursor: pointer;
+}
+.skill-container-tabs a.active {
+  border-radius: 6px;
+  background-color: #ffe7e7;
+}
+.skill-container-logos {
+  display: flex;
+  margin-left: 5px;
+  padding-bottom: 10px;
+  overflow-x: scroll;
+}
+
+.skill-container-logos img {
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 5px;
+  font-size: 22px;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  background-color: #ffe7e7;
+}
+.drop-level {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+}
+.drop-bar img {
+  width: 30px;
+  transition: 0.4s ease;
+  z-index: 2;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 940px) {
+  .skill-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-container1 {
+    max-width: 100%;
+    padding: 20px;
+    margin-left: 0px !important;
+  }
+  .dropskill-container {
+    max-width: 100% !important;
+    margin: 0px auto !important;
+  }
+  .skills-main-div {
+    width: 100% !important;
+    margin: 0px auto !important;
+  }
+  .drop-skill-wrapper {
+    padding: 0px;
+    margin: 30px 0 20px 0;
+  }
+}
+
+.drop-skill-wrapper {
+  margin: 20px 5%;
+  max-width: 500px;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #fff8f9, #fee9ea);
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 10px lightgrey;
+}
+.drop-img {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.drop-img div {
+  object-fit: contain;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: linear-gradient(to right, #fff, #fff);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid #ffdae0;
+}
+
+.drop-img h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-left: 20px;
+}
+.drop-desc {
+  font-family: "Inter", sans-serif;
+  font-weight: 750;
+  opacity: 0.8;
+  margin: 10px 40px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: 0.7;
+  font-size: 17px;
+}
+.drop-texts {
+  display: flex;
+  flex-direction: column;
+}
+.drop-projects,
+.drop-year {
+  border-radius: 10px;
+  border: 2px solid #ffdae0;
+  margin: 10px 20px;
+  padding: 10px;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: 0.87;
+  font-size: 17px;
+}
+.drop-projects span,
+.drop-year span {
+  font-weight: 900;
+  font-size: 22px;
+  float: right;
+  margin-right: 5px;
+}
+.drop-bar {
+  margin: 10px 20px 0px 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.drop-bar-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  z-index: 1;
+  width: 100%;
+  height: 10px;
+  right: 0;
+  background-color: #b5adad;
+  margin: auto;
+}
+.drop-bar-line-value {
+  width: 0%;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  height: 100%;
+  background-image: linear-gradient(to right, #bd95a2, #7874bb);
+}
+.scale {
+  transform: scale(1.5);
+}

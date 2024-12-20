@@ -1,0 +1,110 @@
+body {
+  background-color: #060725 !important;
+}
+
+.b {
+  box-shadow: 0px 10px 10px #060725 !important;
+  color: #fff !important;
+  background: none !important;
+  background-color: #060725 !important;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  color: #fff !important;
+}
+input,
+textarea,
+button,
+.pro-buttons i {
+  color: #fff !important;
+  border: 1px solid white !important;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #fff !important;
+}
+a {
+  color: #fff !important;
+  border: 1px solid white !important;
+  border-radius: 5px !important;
+}
+#projects h2,
+.info h1,
+.skill-container1 h2,
+#education h2,
+.aboutme-text h2 {
+  color: #c91093 !important;
+}
+.pro-desc h2 {
+  color: red !important;
+}
+a:hover {
+  color: #060725 !important;
+}
+.pro-navi a:hover {
+  color: #fff !important;
+}
+.info div a {
+  color: #000 !important;
+  border: 0px solid white !important;
+}
+.edu-inner1,
+.edu-inner2,
+.skills-main-div {
+  border: none !important;
+  background-color: #18202b !important;
+}
+.skill-container-logos a {
+  border: 0px solid red !important;
+}
+.edu-inner1-head,
+.edu-inner1-text-progree-1,
+.percent,
+.edu-inner1-text-progree-2 {
+  color: #fff !important;
+}
+.skills-main-div {
+  box-shadow: 0px 0px 0px #18202b !important;
+}
+.drop-skill-wrapper {
+  box-shadow: 0px 0px 10px #2c3442 !important;
+  background-image: linear-gradient(#3e3f4c, #2c3442) !important;
+}
+
+.drop-projects,
+.drop-year {
+  background-color: #7b7f89 !important;
+}
+.skill-container-tabs a {
+  color: #000 !important;
+  background-color: #a5a6ab !important;
+}
+.skill-container-tabs a:hover {
+  color: #fff !important;
+}
+.fa-github {
+  color: #000 !important;
+}
+.contact {
+  background-image: url("../../assets/images/contact/dark_bg.png");
+  background-repeat: no-repeat !important;
+}
+.experience-container-bubbles div {
+  background-color: #adb7c6 !important;
+}
+.aboutme-text a {
+  border: none !important;
+}
+.aboutme-text a:hover {
+  color: #c91093 !important;
+  border: none !important;
+}
+.info h4 a {
+  border: none !important;
+}
+.info h4 a:hover {
+  color: #c91093 !important;
+}

@@ -1,0 +1,194 @@
+.education-container {
+  text-align: center;
+}
+
+.education-container h2 {
+  font-size: 50px;
+  color: #182d6c;
+  margin: 20px;
+  text-transform: capitalize;
+  font-family: "Courier Prime", monospace;
+}
+
+.edu-outer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.edu-inner1,
+.edu-inner2 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  background-color: #ffe7e7;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 330px;
+  margin: 4px 16px;
+  padding: 8px 16px;
+}
+
+.edu-inner1-imge {
+  margin: 30px auto;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+  background-image: url("../../assets/images/education/narayana.png");
+}
+
+.edu-inner2-imge {
+  margin: 30px auto;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+  background-image: url("../../assets/images/education/ism.jpg");
+}
+
+.edu-inner1-head {
+  width: 100%;
+  text-align: center;
+  padding: 4px 0px;
+  font-family: "Inter", sans-serif;
+  color: #182d6c;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.edu-inner1-desc {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.edu-inner1-text-progree-1 {
+  text-align: left;
+  width: 100%;
+  color: #182d6c;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.edu-inner1-text-progree-2 {
+  text-align: left;
+  width: 100%;
+  color: #182d6c;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.edu-inner1-progress-1 {
+  height: 100%;
+  color: #fff;
+  width: 260px;
+  margin-left: 20px;
+  border-radius: 8px;
+  background-color: #182d6c;
+}
+
+.edu-inner1-progress-2 {
+  height: 100%;
+  color: #fff;
+  width: 273.28px;
+  margin-left: 20px;
+  border-radius: 8px;
+  background-color: #182d6c;
+}
+
+.percent {
+  text-align: left;
+  height: 100%;
+  margin-left: 5px;
+  color: #182d6c;
+  font-weight: 800;
+  flex: 3;
+  font-size: 20px;
+}
+
+.edu-inner-1-footer {
+  width: 100%;
+  margin: 20px 20px;
+  text-align: left;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+}
+.graph {
+  width: 100%;
+  height: 18vh;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.graph .a {
+  color: #fff;
+  width: 20px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #182d6c;
+  height: 100px;
+}
+
+.graph .a1 {
+  height: 80.4px;
+}
+.graph .a2 {
+  height: 86.5px;
+}
+.graph .a3 {
+  height: 91.7px;
+}
+.graph .a4 {
+  height: 96.1px;
+}
+.graph .a5 {
+  height: 78.3px;
+}
+.graph .a6 {
+  height: 73px;
+}
+.graph .a7 {
+  height: 71px;
+}
+.graph .a8 {
+  height: 72.6px;
+}
+
+.hr {
+  width: 100%;
+  margin: 0px auto;
+  height: 3px;
+  background-color: #000;
+}
+
+#mySpan {
+  font-weight: 700;
+  opacity: 0.8;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}

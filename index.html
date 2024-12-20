@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="A responsive personal portfolio website built with HTML, CSS and JavaScript that showcases skills, projects, education and experience in an interactive way."
+    />
+
+    <!-- Animate On Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Akaya Google Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inter:wght@300&display=swap");
+    </style>
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Load Favicons -->
+    <script src="favicon.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="components/header/header.css" />
+    <link rel="stylesheet" href="components/main_info/main_info.css" />
+    <link rel="stylesheet" href="components/about_me/about_me.css" />
+    <link rel="stylesheet" href="components/education/education.css" />
+    <link rel="stylesheet" href="components/skills/skills.css" />
+    <link rel="stylesheet" href="components/projects/projects.css" />
+    <link rel="stylesheet" href="components/journey/journey.css" />
+    <link rel="stylesheet" href="components/contact/contact.css" />
+    <link rel="stylesheet" href="components/footer/footer.css" />
+
+    <!-- Custom JS -->
+    <script src="components/header/header.js"></script>
+    <script src="components/main_info/main_info.js"></script>
+    <script src="components/about_me/about_me.js"></script>
+    <script src="components/education/education.js"></script>
+    <script src="components/skills/skills.js"></script>
+    <script src="components/projects/projects.js"></script>
+    <script src="components/journey/journey.js"></script>
+    <script src="components/contact/contact.js"></script>
+    <script src="components/footer/footer.js"></script>
+
+    <title>bala</title>
+  </head>
+
+  <body>
+    <div class="main b">
+      <div id="home" class="home-container b">
+        <!-- header component -->
+        <div class="header"></div>
+        <!-- header component end -->
+
+        <!-- main info component -->
+        <div class="main-info"></div>
+        <!-- main info component end -->
+      </div>
+
+      <!-- about me component -->
+      <div id="aboutme" class="aboutme"></div>
+      <!-- about me component end -->
+
+      <!-- education component -->
+      <div id="education" class="education"></div>
+      <!-- education component end -->
+
+      <!-- skills component -->
+      <div id="skills" class="skills"></div>
+      <!-- skills component end -->
+
+      <!-- projects component -->
+      <div id="projects" class="projects"></div>
+      <!-- projects component end -->
+
+      <!-- journey component -->
+      <div id="journey" class="journey"></div>
+      <!-- journey component end -->
+
+      <!-- contact component -->
+      <div id="contact" class="contact"></div>
+      <!-- contact component end -->
+
+      <!-- footer component -->
+      <div class="footer-container b"></div>
+      <!-- footer component end-->
+    </div>
+
+    <!-- Animate On Scroll Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 0,
+        easing: "ease-in-out-back",
+      });
+    </script>
+    <!-- mail to -->
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+    <!-- Send Email -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </body>
+</html>
