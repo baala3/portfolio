@@ -2,7 +2,7 @@ A responsive personal portfolio website built with HTML, CSS and JavaScript that
 
 ## Live Demo 🌟
 
-[View Live Site](http://www.balashekhar.github.me)
+[View Live Site](https://balashekhar.me)
 
 # Sections 📚
 
