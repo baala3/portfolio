@@ -109,8 +109,8 @@ function drop(ev) {
         "3",
         "2"
       );
-      bar.style.width = "80%";
-      addscale(80);
+      bar.style.width = "85%";
+      addscale(85);
       break;
     case "go":
       addDetails(
@@ -129,8 +129,8 @@ function drop(ev) {
         "1",
         "2"
       );
-      bar.style.width = "70%";
-      addscale(70);
+      bar.style.width = "85%";
+      addscale(85);
       break;
     case "java":
       addDetails(
@@ -139,8 +139,8 @@ function drop(ev) {
         "1",
         "0.6"
       );
-      bar.style.width = "60%";
-      addscale(60);
+      bar.style.width = "70%";
+      addscale(70);
       break;
     case "html":
       addDetails(
@@ -149,8 +149,8 @@ function drop(ev) {
         "5",
         "5"
       );
-      bar.style.width = "80%";
-      addscale(80);
+      bar.style.width = "90%";
+      addscale(90);
       break;
     case "css":
       addDetails(
@@ -159,8 +159,8 @@ function drop(ev) {
         "5",
         "5"
       );
-      bar.style.width = "80%";
-      addscale(80);
+      bar.style.width = "90%";
+      addscale(90);
       break;
     case "javascript":
       addDetails(
@@ -210,8 +210,8 @@ function drop(ev) {
         "1",
         "0.4"
       );
-      bar.style.width = "40%";
-      addscale(40);
+      bar.style.width = "70%";
+      addscale(70);
       break;
     case "ga":
       addDetails(
@@ -220,8 +220,8 @@ function drop(ev) {
         "3",
         "0.4"
       );
-      bar.style.width = "65%";
-      addscale(65);
+      bar.style.width = "80%";
+      addscale(80);
       break;
 
     case "oauth":
@@ -231,8 +231,8 @@ function drop(ev) {
         "1",
         "1"
       );
-      bar.style.width = "33%";
-      addscale(33);
+      bar.style.width = "60%";
+      addscale(60);
       break;
     case "openid":
       addDetails(
@@ -251,8 +251,8 @@ function drop(ev) {
         "1",
         "1"
       );
-      bar.style.width = "40%";
-      addscale(40);
+      bar.style.width = "70%";
+      addscale(70);
       break;
     case "webauthn":
       addDetails(
@@ -261,8 +261,8 @@ function drop(ev) {
         "1",
         "1"
       );
-      bar.style.width = "40%";
-      addscale(40);
+      bar.style.width = "80%";
+      addscale(80);
       break;
     case "grpc":
       addDetails(
@@ -271,54 +271,54 @@ function drop(ev) {
         "1",
         "1"
       );
-      bar.style.width = "40%";
-      addscale(40);
+      bar.style.width = "50%";
+      addscale(50);
       break;
     case "docker":
       addDetails(
         "Docker",
         "Docker is a platform for building, shipping, and running applications in containers.",
-        "-",
+        "1",
         "1"
       );
-      bar.style.width = "40%";
-      addscale(40);
+      bar.style.width = "70%";
+      addscale(70);
       break;
     case "k8s":
       addDetails(
         "Kubernetes",
         "Kubernetes is an open-source container orchestration platform that automates deployment, scaling, and management of containerized applications.",
-        "-",
+        "1",
         "1"
       );
-      bar.style.width = "40%";
-      addscale(40);
+      bar.style.width = "70%";
+      addscale(70);
       break;
     case "aws":
       addDetails(
         "AWS",
         "Amazon Web Services (AWS) is a cloud computing platform that provides a wide range of services, including computing, storage, databases, and analytics.",
-        "-",
+        "1",
         "1"
       );
-      bar.style.width = "40%";
-      addscale(40);
+      bar.style.width = "70%";
+      addscale(70);
       break;
     case "terraform":
       addDetails(
         "Terraform",
         "Terraform is an open-source infrastructure as code tool that allows you to define and manage your infrastructure in a declarative way.",
-        "-",
+        "1",
         "1"
       );
-      bar.style.width = "40%";
-      addscale(40);
+      bar.style.width = "50%";
+      addscale(50);
       break;
     case "cloudflare":
       addDetails(
         "Cloudflare",
         "Cloudflare is a cloud computing platform that provides a wide range of services, including computing, storage, databases, and analytics.",
-        "-",
+        "1",
         "1"
       );
       bar.style.width = "40%";
@@ -328,11 +328,11 @@ function drop(ev) {
       addDetails(
         "Datadog",
         "Datadog is a cloud computing platform that provides a wide range of services, including computing, storage, databases, and analytics.",
-        "-",
+        "1",
         "1"
       );
-      bar.style.width = "40%";
-      addscale(40);
+      bar.style.width = "60%";
+      addscale(60);
       break;
     default:
       addDetails(
