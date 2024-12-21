@@ -108,3 +108,12 @@ a:hover {
 .info h4 a:hover {
   color: #c91093 !important;
 }
+.footer-contact span {
+  color: #fff !important;
+}
+.footer-contact a {
+  border: none !important;
+}
+.footer-contact a:hover {
+  color: #c91093 !important;
+}

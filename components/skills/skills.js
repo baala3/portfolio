@@ -105,7 +105,7 @@ function drop(ev) {
     case "ruby":
       addDetails(
         "Ruby",
-        "I joined Money Forward as a Ruby on Rails developer and have worked on multiple projects and have a good understanding of the language.",
+        "Ruby is an open-source, dynamic language. Before joining Money Forward, I had no experience, but working as a Rails developer in the ID service team helped me gain expertise in Rails and Ruby.",
         "3",
         "2"
       );
@@ -115,47 +115,27 @@ function drop(ev) {
     case "go":
       addDetails(
         "Go",
-        "I also engaged in GO projects at Money Forward which was used in microservices at the company.",
+        "Go is a statically typed, open-source language. At Money Forward, I gained experience working with Go in microservices, further expanding my development skills.",
         "2",
         "1"
       );
       bar.style.width = "60%";
       addscale(60);
       break;
-    case "c_lang":
-      addDetails(
-        "C",
-        "This is my first language I have learned during my college days during my 1st year.",
-        "1",
-        "2"
-      );
-      bar.style.width = "70%";
-      addscale(70);
-      break;
     case "cpp":
       addDetails(
         "C++",
-        "Through C++ I have learned about OOPs and algorithms. I basically use C++ for competitive programming and understanding the core concepts of programming.",
+        "C++ is the first programming language I learned in college, and I enjoyed using it in competitive programming, which helped me build a strong foundation in problem-solving.",
         "1",
         "2"
       );
       bar.style.width = "70%";
       addscale(70);
-      break;
-    case "python":
-      addDetails(
-        "Python",
-        "I have a little experience with python. But i want to learn more about it in future if i get a chance.",
-        "1",
-        "0.4"
-      );
-      bar.style.width = "40%";
-      addscale(40);
       break;
     case "java":
       addDetails(
         "Java",
-        "I started learning Java when I wanted to do Android development. It was fun learning it while developing Android apps with my friends.",
+        "Java is a versatile, object-oriented language that I first started learning for Android development. It was fun using Java to build Android apps with my friends, which gave me practical experience in both the language and mobile app development.",
         "1",
         "0.6"
       );
@@ -165,7 +145,7 @@ function drop(ev) {
     case "html":
       addDetails(
         "HTML",
-        "HTML is the standard markup language for documents designed to be displayed in a web browser. I learned it as a part of my web development",
+        "HTML is the standard markup language for creating web pages. I learned it as part of my web development journey, gaining the foundational skills needed to build and structure websites.",
         "5",
         "5"
       );
@@ -185,7 +165,7 @@ function drop(ev) {
     case "javascript":
       addDetails(
         "JavaScript",
-        "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. This is the language i have used the most in my projects.",
+        "JavaScript is a high-level, interpreted language that follows the ECMAScript specification. It's the language I’ve used most in my projects.",
         "5",
         "5"
       );
@@ -195,7 +175,7 @@ function drop(ev) {
     case "react":
       addDetails(
         "React",
-        "React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It let me build web apps with ease.",
+        "React is a declarative, efficient JavaScript library for building user interfaces. It allowed me to easily create dynamic web apps.",
         "5",
         "5"
       );
@@ -215,7 +195,7 @@ function drop(ev) {
     case "android":
       addDetails(
         "Android",
-        "Android Studio is Android's official IDE. It is purpose-built for Android to accelerate your development and help you build the highest-quality apps for every Android device.",
+        "Android Studio is the official IDE for Android, designed to accelerate development and help create high-quality apps for Android devices.",
         "2",
         "2"
       );
@@ -226,37 +206,17 @@ function drop(ev) {
     case "mysql":
       addDetails(
         "MySQL",
-        "MySQL is an open-source relational database management system. It is used to store data in a structured format, allowing for efficient retrieval and manipulation of data.",
+        "MySQL is an open-source relational database system. I first learned it in college and continue to use it at Money Forward.",
         "1",
         "0.4"
       );
       bar.style.width = "40%";
       addscale(40);
       break;
-    case "mongo":
-      addDetails(
-        "MongoDB",
-        "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program.",
-        "5",
-        "1"
-      );
-      bar.style.width = "75%";
-      addscale(75);
-      break;
-    case "firebase":
-      addDetails(
-        "Firebase",
-        "Firebase is a cloud platform that includes services like analytics, authentication, realtime databases, configuration, file storage.",
-        "4",
-        "0.4"
-      );
-      bar.style.width = "65%";
-      addscale(65);
-      break;
     case "ga":
       addDetails(
         "GA",
-        "Google Analytics is a free web analytics service that provides detailed statistics about the visitors to a website, and also provides tools for website owners to track and improve their website's performance.",
+        "At Money Forward, I got hands-on with Google Analytics and Google Tag Manager, using them in my projects to track user behavior and dig into insights.",
         "3",
         "0.4"
       );
@@ -267,8 +227,8 @@ function drop(ev) {
     case "oauth":
       addDetails(
         "OAuth",
-        "OAuth is an open-standard authorization protocol or framework that describes how unrelated servers and services can safely allow authenticated access to their assets without actually sharing the initial, related, credentials.",
-        "-",
+        "OAuth is an open-standard authorization protocol that allows secure, authenticated access to services without sharing credentials. As an ID developer at Money Forward, I learned and implemented this core concept in my work.",
+        "1",
         "1"
       );
       bar.style.width = "33%";
@@ -277,9 +237,9 @@ function drop(ev) {
     case "openid":
       addDetails(
         "OpenID",
-        "OpenID is an open-standard authorization protocol or framework that describes how unrelated servers and services can safely allow authenticated access to their assets without actually sharing the initial, related, credentials.",
-        "-",
-        "-"
+        "OpenID is an open-standard authorization protocol that enables secure access to services without sharing credentials. As an ID service developer at Money Forward, I learned and applied this concept in my work.",
+        "1",
+        "1"
       );
       bar.style.width = "40%";
       addscale(40);
@@ -287,18 +247,18 @@ function drop(ev) {
     case "saml":
       addDetails(
         "SAML",
-        "SAML is a standard for exchanging authentication and authorization data between security domains.",
-        "-",
+        "SAML is a standard for exchanging authentication and authorization data between security domains. As an ID service developer at Money Forward, I’ve learned it, and while challenging, I'm still refining my skills.",
+        "1",
         "1"
       );
       bar.style.width = "40%";
       addscale(40);
       break;
-    case "passkey":
+    case "webauthn":
       addDetails(
-        "Passkey",
-        "Passkey is a passwordless authentication method that uses biometric data to verify the user's identity.",
-        "-",
+        "webauthn",
+        "WebAuthn is a new technology that enables seamless passwordless authentication. At Money Forward, I played a key role in implementing this technology at the production level.",
+        "1",
         "1"
       );
       bar.style.width = "40%";
@@ -307,8 +267,8 @@ function drop(ev) {
     case "grpc":
       addDetails(
         "gRPC",
-        "gRPC is a high-performance, open-source universal RPC framework that puts mobile and HTTP/2 first.",
-        "-",
+        "gRPC is a fast, open-source RPC framework that’s all about mobile and HTTP/2. I’m currently learning it to level up my dev skills.",
+        "1",
         "1"
       );
       bar.style.width = "40%";
@@ -348,16 +308,6 @@ function drop(ev) {
       addDetails(
         "Terraform",
         "Terraform is an open-source infrastructure as code tool that allows you to define and manage your infrastructure in a declarative way.",
-        "-",
-        "1"
-      );
-      bar.style.width = "40%";
-      addscale(40);
-      break;
-    case "ci_cd":
-      addDetails(
-        "CI/CD",
-        "CI/CD is a process for automating the delivery of software updates to production.",
         "-",
         "1"
       );
