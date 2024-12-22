@@ -20,7 +20,7 @@ function setAndroidProject(no) {
       androidbutton.getElementsByTagName("a")[0].href =
         "https://appetize.io/app/q1edkvrn3p9r3g13x8h0qx5904?device=nexus5&scale=75&orientation=portrait&osVersion=8.1";
       androidbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/BALASHEKHAR/moreToStore";
+        "https://github.com/baala3/moreToStore";
 
       break;
     case 1:
@@ -31,7 +31,7 @@ function setAndroidProject(no) {
       androidbutton.getElementsByTagName("a")[0].href =
         "https://appetize.io/app/q3g294nb7ymgy3a94wn8meky4w?device=nexus5&scale=75&orientation=portrait&osVersion=8.1";
       androidbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/BALASHEKHAR/SocialNetwork";
+        "https://github.com/baala3/SocialNetwork";
 
       break;
     case 2:
@@ -54,7 +54,7 @@ function setAndroidProject(no) {
       androidbutton.getElementsByTagName("a")[0].href =
         "https://appetize.io/app/q1edkvrn3p9r3g13x8h0qx5904?device=nexus5&scale=75&orientation=portrait&osVersion=8.1";
       androidbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/BALASHEKHAR/moreToStore";
+        "https://github.com/baala3/moreToStore";
   }
 }
 
@@ -74,7 +74,7 @@ function setWebProject(no) {
       webbutton.getElementsByTagName("a")[0].href =
         "https://food-waste-managements.netlify.app/#/";
       webbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/BALASHEKHAR/food-waste-management-client";
+        "https://github.com/baala3/food-waste-management-client";
 
       break;
     case 1:
@@ -110,7 +110,7 @@ function setWebProject(no) {
       webbutton.getElementsByTagName("a")[0].href =
         "https://food-waste-managements.netlify.app/#/";
       webbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/BALASHEKHAR/food-waste-management-client";
+        "https://github.com/baala3/food-waste-management-client";
   }
 }
 
