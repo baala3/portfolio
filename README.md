@@ -1,35 +1,19 @@
-A responsive personal portfolio website built with HTML, CSS and JavaScript that showcases skills, projects, education and experience in an interactive way.
+### portfolio
 
-## Live Demo 🌟
+A responsive personal portfolio website built using raw HTML, CSS, and JavaScript that showcases skills, projects, education, and experience in an interactive way.
 
-[View Live Site](https://balashekhar.me)
+<img src="./assets/images/portfolio.png" alt="Medium" style="width: 400px; height: 350px;">
 
-# Sections 📚
+- Developed during my college days.
 
-✔️ Summary and About me\
-✔️ Education\
-✔️ Skills \
-✔️ Projects\
-✔️ Experience\
-✔️ Journey\
-✔️ Contact me
+### See It Live
 
-# illustrations 🍥
+<div style="text-align: center; display: flex; align-items: center;">
+    <span style="font-size: 32px; margin-right: 8px;">☞</span> 
+    <a href="https://balashekhar.me">here</a>
+</div>
 
-- [Figma](https://www.figma.com/)
-
-## How to run on local
-
-```bash
-# Install http-server globally
-npm install -g http-server
-
-# Start the server
-http-server -p 8080
-
-# Then open in your browser
-# http://localhost:8080
-```
+### note:
 
 **Opening `index.html` directly in a browser won't work properly because:**
 
@@ -42,3 +26,22 @@ Using a local server (like `http-server` or Python's server) serves files over H
 - Prevents CORS issues
 - Allows JavaScript to fetch local resources
 - Matches how the site will run in production
+
+* so use
+
+<details><summary>http-server to run on local</summary>
+<p>
+
+```bash
+# Install http-server globally
+npm install -g http-server
+
+# Start the server
+http-server -p 8080
+
+# Then open in your browser
+# http://localhost:8080
+```
+
+</p>
+</details>
