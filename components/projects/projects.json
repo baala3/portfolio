@@ -1,0 +1,62 @@
+{
+  "categories": {
+    "web": {
+      "name": "Web Projects",
+      "projects": [
+        {
+          "id": "foodwaste",
+          "title": "Food Waste Management",
+          "description": "Food Waste Management is a full stack web application that enable user to login and post the food availability in their areas or known location. And any one to see the post from other people and able to track the location and directions from their current location. Tech Stack used: MongoDB, (Mongoose), Node.js, React, Express,Material-UI, Mapbox-gl, ftp-mail, JWT (Authentication), Redux, (React-Redux), React-swipeable-views",
+          "image": "foodwaste.png",
+          "demoUrl": "https://food-waste-managements.netlify.app/#/",
+          "githubUrl": "https://github.com/baala3/food-waste-management-client"
+        },
+        {
+          "id": "moretostore",
+          "title": "More to Store Admin Panel",
+          "description": "More-To-Store admin panel for an app made for Android app.The website has the following features :The admin can add new items, issue items to some existing users. The admin can also view the items of more to store, an Admin can edit and delete the items if he wants. The users can create their account, search for items, edit their profile.",
+          "image": "moretostore (1).png",
+          "demoUrl": "https://jagan9.github.io/More-to-store-admin-panel/#/",
+          "githubUrl": "https://github.com/jagan9/More-To-Store"
+        },
+        {
+          "id": "corona",
+          "title": "Corona-Tracker Web App",
+          "description": "A progressive web app to serve corona cases are there in state , country , district. The user can search another state, or district.A website made using Bootstrape to display the corona cases are there in state , country , district. The user can search another state, or district. The user can find easily understand th cases information due to in this I used Fusion Charts ['charts Library'] .",
+          "image": "corona.png",
+          "demoUrl": "https://coronaweb.netlify.app/",
+          "githubUrl": "https://github.com/jagan9/Corona-Tracker"
+        }
+      ]
+    },
+    "android": {
+      "name": "Android Projects",
+      "projects": [
+        {
+          "id": "moretostore",
+          "title": "More to Store",
+          "description": "More-To-Store is an app where you can buy items like flipkart, Amazon.Technologies used:Firebase Libraries(Realtime database,storage,Authentication),Android Architecture components(View Pager,Recycler withmultiple Items). Architecture used:MVC",
+          "image": "app0.png",
+          "demoUrl": "https://appetize.io/app/q1edkvrn3p9r3g13x8h0qx5904?device=nexus5&scale=75&orientation=portrait&osVersion=8.1",
+          "githubUrl": "https://github.com/baala3/moreToStore"
+        },
+        {
+          "id": "socialnetwork",
+          "title": "Social Network",
+          "description": "A simple social media app including chat feature and also this lets the users able to post. It has the following features :user login, sign up, and authentication Customize your user profile and their posts Following and unfollowing othersLiking, commenting, and saving other users posts; Technologies used : Java/XML,Firebase realtime databases and Firebase Authentication and Android Architecture components",
+          "image": "app1.png",
+          "demoUrl": "https://appetize.io/app/q3g294nb7ymgy3a94wn8meky4w?device=nexus5&scale=75&orientation=portrait&osVersion=8.1",
+          "githubUrl": "https://github.com/baala3/SocialNetwork"
+        },
+        {
+          "id": "weather",
+          "title": "Weather",
+          "description": "Weatherapp is a simple weather forecast app, which uses some APIs to fetch 5 day / 3 hour forecast data from the OpenWeatherMap and to fetch places,cities,counties,coords etc.",
+          "image": "app2.png",
+          "demoUrl": "https://appetize.io/app/q9e1mrnphbm14p7d02wq4ujqx8?device=nexus5&scale=75&orientation=portrait&osVersion=8.1",
+          "githubUrl": "https://github.com/jagan9/Corona-Tracker"
+        }
+      ]
+    }
+  }
+}

@@ -1,3 +1,5 @@
+let projectsData = null;
+
 async function LoadProjects() {
   const response = await fetch("components/projects/projects.html");
   const data = await response.text();
@@ -5,149 +7,122 @@ async function LoadProjects() {
   projects.innerHTML = data;
 }
 
-// to display the android projects
-function setAndroidProject(no) {
-  const androidbody = document.getElementById("android-body");
-  const androidimg = document.getElementById("android-img");
-  const androidbutton = document.getElementById("android-button");
-
-  switch (no) {
-    case 0:
-      androidimg.src = "../../assets/images/projects/app0.png";
-      androidbody.getElementsByTagName("h2")[0].textContent = "More to Store";
-      androidbody.getElementsByTagName("p")[0].textContent =
-        "More-To-Store is an app where you can buy items like flipkart, Amazon.Technologies used:Firebase Libraries(Realtime database,storage,Authentication),Android Architecture components(View Pager,Recycler withmultiple Items). Architecture used:MVC";
-      androidbutton.getElementsByTagName("a")[0].href =
-        "https://appetize.io/app/q1edkvrn3p9r3g13x8h0qx5904?device=nexus5&scale=75&orientation=portrait&osVersion=8.1";
-      androidbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/baala3/moreToStore";
-
-      break;
-    case 1:
-      androidimg.src = "../../assets/images/projects/app1.png";
-      androidbody.getElementsByTagName("h2")[0].textContent = "Social Network";
-      androidbody.getElementsByTagName("p")[0].textContent =
-        "A simple social media app including chat feature and also this lets the users able to post. It has the following features :user login, sign up, and authentication Customize your user profile and their posts Following and unfollowing othersLiking, commenting, and saving other users posts; Technologies used : Java/XML,Firebase realtime databases and Firebase Authentication and Android Architecture components";
-      androidbutton.getElementsByTagName("a")[0].href =
-        "https://appetize.io/app/q3g294nb7ymgy3a94wn8meky4w?device=nexus5&scale=75&orientation=portrait&osVersion=8.1";
-      androidbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/baala3/SocialNetwork";
-
-      break;
-    case 2:
-      androidimg.src = "../../assets/images/projects/app2.png";
-      androidbody.getElementsByTagName("h2")[0].textContent = "Weather";
-      androidbody.getElementsByTagName("p")[0].textContent =
-        "Weatherapp is a simple weather forecast app, which uses some APIs to fetch 5 day / 3 hour forecast data from the OpenWeatherMap and to fetch places,cities,counties,coords etc.";
-      androidbutton.getElementsByTagName("a")[0].href =
-        "https://appetize.io/app/q9e1mrnphbm14p7d02wq4ujqx8?device=nexus5&scale=75&orientation=portrait&osVersion=8.1";
-      androidbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/jagan9/Corona-Tracker";
-
-      break;
-    default:
-      androidimg.src = "../../assets/images/projects/app0.png";
-      androidbody.getElementsByTagName("h2")[0].textContent =
-        "Social Media App";
-      androidbody.getElementsByTagName("p")[0].textContent =
-        "More-To-Store is an app where you can buy items like flipkart, Amazon.Technologies used:Firebase Libraries(Realtime database,storage,Authentication),Android Architecture components(View Pager,Recycler withmultiple Items). Architecture used:MVC";
-      androidbutton.getElementsByTagName("a")[0].href =
-        "https://appetize.io/app/q1edkvrn3p9r3g13x8h0qx5904?device=nexus5&scale=75&orientation=portrait&osVersion=8.1";
-      androidbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/baala3/moreToStore";
+async function loadProjectsData() {
+  try {
+    const response = await fetch("components/projects/projects.json");
+    projectsData = await response.json();
+    await generateProjects();
+  } catch (error) {
+    console.error("Error loading projects data:", error);
+    showError();
   }
 }
 
-// to display the web projects
-function setWebProject(no) {
-  const webbody = document.getElementById("web-body");
-  const webimg = document.getElementById("web-img");
-  const webbutton = document.getElementById("web-button");
-
-  switch (no) {
-    case 0:
-      webimg.src = "../../assets/images/projects/foodwaste.png";
-      webbody.getElementsByTagName("h2")[0].textContent =
-        "Food Waste Management";
-      webbody.getElementsByTagName("p")[0].textContent =
-        "Food Waste Management is a full stack web application that enable user to login and post the food availability in their areas or known location. And any one to see the post from other people and able to track the location and directions from their current location. Tech Stack used: MongoDB, (Mongoose), Node.js, React, Express,Material-UI, Mapbox-gl, ftp-mail, JWT (Authentication), Redux, (React-Redux), React-swipeable-views";
-      webbutton.getElementsByTagName("a")[0].href =
-        "https://food-waste-managements.netlify.app/#/";
-      webbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/baala3/food-waste-management-client";
-
-      break;
-    case 1:
-      webimg.src = "../../assets/images/projects/moretostore (1).png";
-      webbody.getElementsByTagName("h2")[0].textContent =
-        "More to Store Admin Panel";
-      webbody.getElementsByTagName("p")[0].textContent =
-        "More-To-Store admin panel for an app made for Android app.The website has the following features :The admin can add new items, issue items to some existing users. The admin can also view the items of more to store, an Admin can edit and delete the items if he wants. The users can create their account, search for items, edit their profile.";
-      webbutton.getElementsByTagName("a")[0].href =
-        "https://jagan9.github.io/More-to-store-admin-panel/#/";
-      webbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/jagan9/More-To-Store";
-
-      break;
-    case 2:
-      webimg.src = "../../assets/images/projects/corona.png";
-      webbody.getElementsByTagName("h2")[0].textContent =
-        "Corona-Tracker Web App";
-      webbody.getElementsByTagName("p")[0].textContent =
-        "A progressive web app to serve corona cases are there in state , country , district. The user can search another state, or district.A website made using Bootstrape to display the corona cases are there in state , country , district. The user can search another state, or district. The user can find easily understand th cases information due to in this I used Fusion Charts ['charts Library'] .";
-      webbutton.getElementsByTagName("a")[0].href =
-        "https://coronaweb.netlify.app/";
-      webbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/jagan9/Corona-Tracker";
-
-      break;
-    default:
-      webimg.src = "../../assets/images/projects/foodwaste.png";
-      webbody.getElementsByTagName("h2")[0].textContent =
-        "Food Waste Management";
-      webbody.getElementsByTagName("p")[0].textContent =
-        "Food Waste Management is a full stack web application that enable user to login and post the food availability in their areas or known location. And any one to see the post from other people and able to track the location and directions from their current location. Tech Stack used: MongoDB, (Mongoose), Node.js, React, Express,Material-UI, Mapbox-gl, ftp-mail, JWT (Authentication), Redux, (React-Redux), React-swipeable-views";
-      webbutton.getElementsByTagName("a")[0].href =
-        "https://food-waste-managements.netlify.app/#/";
-      webbutton.getElementsByTagName("a")[1].href =
-        "https://github.com/baala3/food-waste-management-client";
-  }
+function showError() {
+  const errorMessage = "Failed to load projects. Please try again later.";
+  document
+    .querySelectorAll(".pro-desc h2")
+    .forEach((h2) => (h2.textContent = errorMessage));
+  document
+    .querySelectorAll(".pro-desc p")
+    .forEach((p) => (p.textContent = errorMessage));
 }
 
-function HandleWebProjects() {
-  let webprojectno = 0;
+function generateProjects() {
+  // Generate Web Projects Section
+  const webProjects = projectsData.categories.web.projects;
+  const webContainer = document.querySelector(".project-main");
+  const webBody = document.getElementById("web-body");
+  const webImg = document.getElementById("web-img");
+  const webButton = document.getElementById("web-button");
 
-  const webleft = document.getElementById("web-left");
-  const webright = document.getElementById("web-right");
+  // Generate Android Projects Section
+  const androidProjects = projectsData.categories.android.projects;
+  const androidContainer = document.querySelector(".project-main2");
+  const androidBody = document.getElementById("android-body");
+  const androidImg = document.getElementById("android-img");
+  const androidButton = document.getElementById("android-button");
 
-  webleft.addEventListener("click", () => {
-    webprojectno = (webprojectno - 1 + 3) % 3;
-    setWebProject(webprojectno);
+  // Set up navigation for web projects
+  let webProjectIndex = 0;
+  const webLeft = document.getElementById("web-left");
+  const webRight = document.getElementById("web-right");
+
+  webLeft.addEventListener("click", () => {
+    webProjectIndex =
+      (webProjectIndex - 1 + webProjects.length) % webProjects.length;
+    updateWebProject(webProjectIndex);
   });
-  webright.addEventListener("click", () => {
-    webprojectno = (webprojectno + 1) % 3;
-    setWebProject(webprojectno);
+
+  webRight.addEventListener("click", () => {
+    webProjectIndex = (webProjectIndex + 1) % webProjects.length;
+    updateWebProject(webProjectIndex);
   });
+
+  // Set up navigation for android projects
+  let androidProjectIndex = 0;
+  const androidLeft = document.getElementById("android-left");
+  const androidRight = document.getElementById("android-right");
+
+  androidLeft.addEventListener("click", () => {
+    androidProjectIndex =
+      (androidProjectIndex - 1 + androidProjects.length) %
+      androidProjects.length;
+    updateAndroidProject(androidProjectIndex);
+  });
+
+  androidRight.addEventListener("click", () => {
+    androidProjectIndex = (androidProjectIndex + 1) % androidProjects.length;
+    updateAndroidProject(androidProjectIndex);
+  });
+
+  // Initial project display
+  updateWebProject(0);
+  updateAndroidProject(0);
 }
 
-function HandleAndroidProjects() {
-  let androidprojectno = 0;
+function updateWebProject(index) {
+  const project = projectsData.categories.web.projects[index];
+  const webBody = document.getElementById("web-body");
+  const webImg = document.getElementById("web-img");
+  const webButton = document.getElementById("web-button");
 
-  const androidleft = document.getElementById("android-left");
-  const androidright = document.getElementById("android-right");
+  // Update image with loading state
+  webImg.src = `../../assets/images/projects/placeholder.png`;
+  const img = new Image();
+  img.onload = () => {
+    webImg.src = `../../assets/images/projects/${project.image}`;
+  };
+  img.src = `../../assets/images/projects/${project.image}`;
 
-  androidleft.addEventListener("click", () => {
-    androidprojectno = (androidprojectno - 1 + 3) % 3;
-    setAndroidProject(androidprojectno);
-  });
-  androidright.addEventListener("click", () => {
-    androidprojectno = (androidprojectno + 1) % 3;
-    setAndroidProject(androidprojectno);
-  });
+  // Update content
+  webBody.getElementsByTagName("h2")[0].textContent = project.title;
+  webBody.getElementsByTagName("p")[0].textContent = project.description;
+  webButton.getElementsByTagName("a")[0].href = project.demoUrl;
+  webButton.getElementsByTagName("a")[1].href = project.githubUrl;
+}
+
+function updateAndroidProject(index) {
+  const project = projectsData.categories.android.projects[index];
+  const androidBody = document.getElementById("android-body");
+  const androidImg = document.getElementById("android-img");
+  const androidButton = document.getElementById("android-button");
+
+  // Update image with loading state
+  androidImg.src = `../../assets/images/projects/placeholder.png`;
+  const img = new Image();
+  img.onload = () => {
+    androidImg.src = `../../assets/images/projects/${project.image}`;
+  };
+  img.src = `../../assets/images/projects/${project.image}`;
+
+  // Update content
+  androidBody.getElementsByTagName("h2")[0].textContent = project.title;
+  androidBody.getElementsByTagName("p")[0].textContent = project.description;
+  androidButton.getElementsByTagName("a")[0].href = project.demoUrl;
+  androidButton.getElementsByTagName("a")[1].href = project.githubUrl;
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await LoadProjects();
-  HandleWebProjects();
-  HandleAndroidProjects();
+  await Promise.all([LoadProjects(), loadProjectsData()]);
 });
