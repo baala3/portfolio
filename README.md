@@ -2,7 +2,7 @@
 
 A responsive personal portfolio website built using raw HTML, CSS, and JavaScript that showcases skills, projects, education, and experience in an interactive way.
 
-<img src="./assets/images/portfolio.png" alt="Medium" style="width: 400px; height: 350px;">
+<img src="./assets/images/portfolio.png" alt="Medium" style="width: 535px; height: 350px;">
 
 - Developed during my college days.
 
