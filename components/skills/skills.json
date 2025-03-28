@@ -1,0 +1,193 @@
+{
+  "categories": {
+    "code_build": {
+      "name": "code&build",
+      "icon": "fas fa-code",
+      "skills": [
+        "ruby",
+        "go",
+        "cpp",
+        "java",
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "nodejs",
+        "android"
+      ]
+    },
+    "data_security": {
+      "name": "data&security",
+      "icon": "far fa-edit",
+      "skills": ["mysql", "ga", "oauth", "openid", "saml", "webauthn", "grpc"]
+    },
+    "devops_cloud": {
+      "name": "devops&cloud",
+      "icon": "fa fa-tools",
+      "skills": ["docker", "k8s", "aws", "terraform", "cloudflare", "datadog"]
+    }
+  },
+  "skills": {
+    "ruby": {
+      "title": "Ruby",
+      "description": "Ruby is an open-source, dynamic language. Before joining Money Forward, I had no experience, but working as a Rails developer in the ID service team helped me gain expertise in Rails and Ruby.",
+      "np": "3",
+      "ex": "2",
+      "level": 85
+    },
+    "go": {
+      "title": "Go",
+      "description": "Go is a statically typed, open-source language. At Money Forward, I gained experience working with Go in microservices, further expanding my development skills.",
+      "np": "2",
+      "ex": "1",
+      "level": 60
+    },
+    "cpp": {
+      "title": "C++",
+      "description": "C++ is the first programming language I learned in college, and I enjoyed using it in competitive programming, which helped me build a strong foundation in problem-solving.",
+      "np": "1",
+      "ex": "2",
+      "level": 85
+    },
+    "java": {
+      "title": "Java",
+      "description": "Java is a versatile, object-oriented language that I first started learning for Android development. It was fun using Java to build Android apps with my friends, which gave me practical experience in both the language and mobile app development.",
+      "np": "1",
+      "ex": "0.6",
+      "level": 70
+    },
+    "html": {
+      "title": "HTML",
+      "description": "HTML is the standard markup language for creating web pages. I learned it as part of my web development journey, gaining the foundational skills needed to build and structure websites.",
+      "np": "5",
+      "ex": "5",
+      "level": 90
+    },
+    "css": {
+      "title": "CSS",
+      "description": "CSS is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.",
+      "np": "5",
+      "ex": "5",
+      "level": 90
+    },
+    "javascript": {
+      "title": "JavaScript",
+      "description": "JavaScript is a high-level, interpreted language that follows the ECMAScript specification. It's the language I've used most in my projects.",
+      "np": "5",
+      "ex": "5",
+      "level": 80
+    },
+    "react": {
+      "title": "React",
+      "description": "React is a declarative, efficient JavaScript library for building user interfaces. It allowed me to easily create dynamic web apps.",
+      "np": "5",
+      "ex": "5",
+      "level": 80
+    },
+    "nodejs": {
+      "title": "NodeJS",
+      "description": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser.",
+      "np": "4",
+      "ex": "4",
+      "level": 80
+    },
+    "android": {
+      "title": "Android",
+      "description": "Android Studio is the official IDE for Android, designed to accelerate development and help create high-quality apps for Android devices.",
+      "np": "2",
+      "ex": "2",
+      "level": 80
+    },
+    "mysql": {
+      "title": "MySQL",
+      "description": "MySQL is an open-source relational database system. I first learned it in college and continue to use it at Money Forward.",
+      "np": "1",
+      "ex": "0.4",
+      "level": 70
+    },
+    "ga": {
+      "title": "GA",
+      "description": "At Money Forward, I got hands-on with Google Analytics and Google Tag Manager, using them in my projects to track user behavior and dig into insights.",
+      "np": "3",
+      "ex": "0.4",
+      "level": 80
+    },
+    "oauth": {
+      "title": "OAuth",
+      "description": "OAuth is an open-standard authorization protocol that allows secure, authenticated access to services without sharing credentials. As an ID developer at Money Forward, I learned and implemented this core concept in my work.",
+      "np": "1",
+      "ex": "1",
+      "level": 60
+    },
+    "openid": {
+      "title": "OpenID",
+      "description": "OpenID is an open-standard authorization protocol that enables secure access to services without sharing credentials. As an ID service developer at Money Forward, I learned and applied this concept in my work.",
+      "np": "1",
+      "ex": "1",
+      "level": 40
+    },
+    "saml": {
+      "title": "SAML",
+      "description": "SAML is a standard for exchanging authentication and authorization data between security domains. As an ID service developer at Money Forward, I've learned it, and while challenging, I'm still refining my skills.",
+      "np": "1",
+      "ex": "1",
+      "level": 70
+    },
+    "webauthn": {
+      "title": "webauthn",
+      "description": "WebAuthn is a new technology that enables seamless passwordless authentication. At Money Forward, I played a key role in implementing this technology at the production level.",
+      "np": "1",
+      "ex": "1",
+      "level": 80
+    },
+    "grpc": {
+      "title": "gRPC",
+      "description": "gRPC is a fast, open-source RPC framework that's all about mobile and HTTP/2. I'm currently learning it to level up my dev skills.",
+      "np": "1",
+      "ex": "1",
+      "level": 50
+    },
+    "docker": {
+      "title": "Docker",
+      "description": "Docker is a platform for building, shipping, and running applications in containers.",
+      "np": "1",
+      "ex": "1",
+      "level": 70
+    },
+    "k8s": {
+      "title": "Kubernetes",
+      "description": "Kubernetes is an open-source container orchestration platform that automates deployment, scaling, and management of containerized applications.",
+      "np": "1",
+      "ex": "1",
+      "level": 70
+    },
+    "aws": {
+      "title": "AWS",
+      "description": "Amazon Web Services (AWS) is a cloud computing platform that provides a wide range of services, including computing, storage, databases, and analytics.",
+      "np": "1",
+      "ex": "1",
+      "level": 70
+    },
+    "terraform": {
+      "title": "Terraform",
+      "description": "Terraform is an open-source infrastructure as code tool that allows you to define and manage your infrastructure in a declarative way.",
+      "np": "1",
+      "ex": "1",
+      "level": 50
+    },
+    "cloudflare": {
+      "title": "Cloudflare",
+      "description": "Cloudflare is a cloud computing platform that provides a wide range of services, including computing, storage, databases, and analytics.",
+      "np": "1",
+      "ex": "1",
+      "level": 40
+    },
+    "datadog": {
+      "title": "Datadog",
+      "description": "Datadog is a cloud computing platform that provides a wide range of services, including computing, storage, databases, and analytics.",
+      "np": "1",
+      "ex": "1",
+      "level": 60
+    }
+  }
+}
