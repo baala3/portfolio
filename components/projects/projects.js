@@ -1,18 +1,32 @@
 let projectsData = null;
 
 async function LoadProjects() {
-  const response = await fetch("components/projects/projects.html");
-  const data = await response.text();
-  const projects = document.querySelector(".projects");
-  projects.innerHTML = data;
+  try {
+    const response = await fetch("components/projects/projects.html");
+    const data = await response.text();
+    const projects = document.querySelector(".projects");
+    if (!projects) {
+      throw new Error("Projects container not found");
+    }
+    projects.innerHTML = data;
+  } catch (error) {
+    window.location.reload();
+    console.error("Error loading projects HTML:", error);
+  }
 }
 
 async function loadProjectsData() {
   try {
     const response = await fetch("components/projects/projects.json");
     projectsData = await response.json();
-    await generateProjects();
+
+    // Only generate projects if container exists
+    const projectsContainer = document.querySelector(".projects");
+    if (projectsContainer) {
+      await generateProjects();
+    }
   } catch (error) {
+    window.location.reload();
     console.error("Error loading projects data:", error);
     showError();
   }
@@ -36,6 +50,10 @@ function generateProjects() {
   const webImg = document.getElementById("web-img");
   const webButton = document.getElementById("web-button");
 
+  if (!webContainer || !webBody || !webImg || !webButton) {
+    throw new Error("Web project elements not found");
+  }
+
   // Generate Android Projects Section
   const androidProjects = projectsData.categories.android.projects;
   const androidContainer = document.querySelector(".project-main2");
@@ -43,38 +61,46 @@ function generateProjects() {
   const androidImg = document.getElementById("android-img");
   const androidButton = document.getElementById("android-button");
 
+  if (!androidContainer || !androidBody || !androidImg || !androidButton) {
+    throw new Error("Android project elements not found");
+  }
+
   // Set up navigation for web projects
   let webProjectIndex = 0;
   const webLeft = document.getElementById("web-left");
   const webRight = document.getElementById("web-right");
 
-  webLeft.addEventListener("click", () => {
-    webProjectIndex =
-      (webProjectIndex - 1 + webProjects.length) % webProjects.length;
-    updateWebProject(webProjectIndex);
-  });
+  if (webLeft && webRight) {
+    webLeft.addEventListener("click", () => {
+      webProjectIndex =
+        (webProjectIndex - 1 + webProjects.length) % webProjects.length;
+      updateWebProject(webProjectIndex);
+    });
 
-  webRight.addEventListener("click", () => {
-    webProjectIndex = (webProjectIndex + 1) % webProjects.length;
-    updateWebProject(webProjectIndex);
-  });
+    webRight.addEventListener("click", () => {
+      webProjectIndex = (webProjectIndex + 1) % webProjects.length;
+      updateWebProject(webProjectIndex);
+    });
+  }
 
   // Set up navigation for android projects
   let androidProjectIndex = 0;
   const androidLeft = document.getElementById("android-left");
   const androidRight = document.getElementById("android-right");
 
-  androidLeft.addEventListener("click", () => {
-    androidProjectIndex =
-      (androidProjectIndex - 1 + androidProjects.length) %
-      androidProjects.length;
-    updateAndroidProject(androidProjectIndex);
-  });
+  if (androidLeft && androidRight) {
+    androidLeft.addEventListener("click", () => {
+      androidProjectIndex =
+        (androidProjectIndex - 1 + androidProjects.length) %
+        androidProjects.length;
+      updateAndroidProject(androidProjectIndex);
+    });
 
-  androidRight.addEventListener("click", () => {
-    androidProjectIndex = (androidProjectIndex + 1) % androidProjects.length;
-    updateAndroidProject(androidProjectIndex);
-  });
+    androidRight.addEventListener("click", () => {
+      androidProjectIndex = (androidProjectIndex + 1) % androidProjects.length;
+      updateAndroidProject(androidProjectIndex);
+    });
+  }
 
   // Initial project display
   updateWebProject(0);
@@ -86,6 +112,11 @@ function updateWebProject(index) {
   const webBody = document.getElementById("web-body");
   const webImg = document.getElementById("web-img");
   const webButton = document.getElementById("web-button");
+
+  if (!webBody || !webImg || !webButton) {
+    console.error("Web project elements not found");
+    return;
+  }
 
   // Update image with loading state
   webImg.src = `../../assets/images/projects/placeholder.png`;
@@ -107,6 +138,11 @@ function updateAndroidProject(index) {
   const androidBody = document.getElementById("android-body");
   const androidImg = document.getElementById("android-img");
   const androidButton = document.getElementById("android-button");
+
+  if (!androidBody || !androidImg || !androidButton) {
+    console.error("Android project elements not found");
+    return;
+  }
 
   // Update image with loading state
   androidImg.src = `../../assets/images/projects/placeholder.png`;

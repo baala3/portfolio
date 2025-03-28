@@ -2,6 +2,11 @@ let skillsData = null;
 
 function generateTabs() {
   const tabsContainer = document.querySelector(".skill-container-tabs");
+  if (!tabsContainer) {
+    console.error("Skill tabs container not found");
+    return;
+  }
+
   tabsContainer.innerHTML = "";
 
   Object.entries(skillsData.categories).forEach(
@@ -16,6 +21,12 @@ function generateTabs() {
 }
 
 function generateSkillIcons() {
+  const mainDiv = document.querySelector(".skills-main-div");
+  if (!mainDiv) {
+    console.error("Skills main div not found");
+    return;
+  }
+
   Object.entries(skillsData.categories).forEach(
     ([categoryId, category], index) => {
       const iconsContainer = document.createElement("div");
@@ -37,25 +48,39 @@ function generateSkillIcons() {
         iconsContainer.appendChild(img);
       });
 
-      document.querySelector(".skills-main-div").appendChild(iconsContainer);
+      mainDiv.appendChild(iconsContainer);
     }
   );
 }
 
 async function LoadSkills() {
-  const response = await fetch("components/skills/skills.html");
-  const data = await response.text();
-  const skills = document.querySelector(".skills");
-  skills.innerHTML = data;
+  try {
+    const response = await fetch("components/skills/skills.html");
+    const data = await response.text();
+    const skills = document.querySelector(".skills");
+    if (!skills) {
+      throw new Error("Skills container not found");
+    }
+    skills.innerHTML = data;
+  } catch (error) {
+    window.location.reload();
+    console.error("Error loading skills HTML:", error);
+  }
 }
 
 async function loadSkillsData() {
   try {
     const response = await fetch("components/skills/skills.json");
     skillsData = await response.json();
-    generateTabs();
-    generateSkillIcons();
+
+    // Only generate UI if elements exist
+    const skillsContainer = document.querySelector(".skills");
+    if (skillsContainer) {
+      generateTabs();
+      generateSkillIcons();
+    }
   } catch (error) {
+    window.location.reload();
     console.error("Error loading skills data:", error);
   }
 }
@@ -63,6 +88,11 @@ async function loadSkillsData() {
 function handleTabs() {
   const tabs = document.querySelectorAll(".skill-container-tabs a");
   const iconContainers = document.querySelectorAll(".skill-container-logos");
+
+  if (!tabs.length || !iconContainers.length) {
+    console.error("Tab elements not found");
+    return;
+  }
 
   tabs.forEach((tab, index) => {
     tab.addEventListener("click", () => {
