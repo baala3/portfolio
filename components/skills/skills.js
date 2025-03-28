@@ -25,15 +25,14 @@ function generateSkillIcons() {
         iconsContainer.style.display = "none";
       }
 
-      category.skills.forEach((skillId) => {
-        const skill = skillsData.skills[skillId];
+      category.skills.forEach((skill) => {
         const img = document.createElement("img");
         img.width = 50;
         img.height = 50;
-        img.id = skillId;
+        img.id = skill.id;
         img.draggable = true;
         img.ondragstart = drag;
-        img.src = `../../assets/images/skills/${skillId}.png`;
+        img.src = `../../assets/images/skills/${skill.id}.png`;
         img.alt = skill.title;
         iconsContainer.appendChild(img);
       });
@@ -136,8 +135,17 @@ function drop(ev) {
   ev.target.style.backgroundImage = `url(${it.src})`;
   const bar = document.getElementById("drop-bar-line-value");
 
-  if (skillsData && skillsData.skills[data]) {
-    const skill = skillsData.skills[data];
+  // Find the skill in any category
+  let skill = null;
+  for (const category of Object.values(skillsData.categories)) {
+    const found = category.skills.find((s) => s.id === data);
+    if (found) {
+      skill = found;
+      break;
+    }
+  }
+
+  if (skill) {
     addDetails(skill.title, skill.description, skill.np, skill.ex);
     bar.style.width = `${skill.level}%`;
     addscale(skill.level);
