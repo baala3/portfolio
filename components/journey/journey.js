@@ -74,7 +74,7 @@ function LoadJourneyListener() {
     let x = parseInt(
       document.getElementById("trainImg").style.backgroundPosition
     );
-    if (window.innerWidth - x + 200 > 3650) x = 200;
+    if (window.innerWidth - x + 200 > 5100) x = 200;
     document.getElementById("trainImg").style.backgroundPosition = `${
       x - 200
     }px`;
