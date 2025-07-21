@@ -99,4 +99,7 @@
   .theme button span {
     display: none;
   }
+  .home-container-header-image {
+    margin: 0px;
+  }
 }
