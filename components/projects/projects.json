@@ -4,6 +4,14 @@
       "name": "Web Projects",
       "projects": [
         {
+          "id": "graphalogvisualizer",
+          "title": "Graph Algorithm Visualiser",
+          "description": "A web-based interactive tool to visualize graph algorithms as part of learning Data Structures and Algorithms. It supports BFS, DFS, MST, and Dijkstra’s algorithms, with real-time visualization using React, Fluent UI, and SVG graphics. The project focuses on helping users understand how these algorithms work step-by-step. Deployed on Vercel.",
+          "image": "graphalogvisualizer.png",
+          "demoUrl": "https://graph-algo-visualizer-mocha.vercel.app/",
+          "githubUrl": "https://github.com/baala3/graph-algo-visualizer"
+        },
+        {
           "id": "foodwaste",
           "title": "Food Waste Management",
           "description": "Food Waste Management is a full stack web application that enable user to login and post the food availability in their areas or known location. And any one to see the post from other people and able to track the location and directions from their current location. Tech Stack used: MongoDB, (Mongoose), Node.js, React, Express,Material-UI, Mapbox-gl, ftp-mail, JWT (Authentication), Redux, (React-Redux), React-swipeable-views",
@@ -12,20 +20,20 @@
           "githubUrl": "https://github.com/baala3/food-waste-management-client"
         },
         {
-          "id": "moretostore",
-          "title": "More to Store Admin Panel",
-          "description": "More-To-Store admin panel for an app made for Android app.The website has the following features :The admin can add new items, issue items to some existing users. The admin can also view the items of more to store, an Admin can edit and delete the items if he wants. The users can create their account, search for items, edit their profile.",
-          "image": "moretostore (1).png",
-          "demoUrl": "https://jagan9.github.io/More-to-store-admin-panel/#/",
-          "githubUrl": "https://github.com/jagan9/More-To-Store"
+          "id": "rubysamlauth",
+          "title": "Ruby SAML Auth",
+          "description": "A minimal SAML 2.0 authentication system in pure Ruby, integrated with Okta, handling full SSO/SLO flows and encrypted assertions. Developed entirely from scratch using Rack, Nokogiri, and OpenSSL—without relying on any SAML libraries. This project is to understand SAML internals, XML signatures, and session management deeply.",
+          "image": "rubysamlauth.png",
+          "demoUrl": "https://github.com/baala3/ruby_saml_auth",
+          "githubUrl": "https://github.com/baala3/ruby_saml_auth"
         },
         {
-          "id": "corona",
-          "title": "Corona-Tracker Web App",
-          "description": "A progressive web app to serve corona cases are there in state , country , district. The user can search another state, or district.A website made using Bootstrape to display the corona cases are there in state , country , district. The user can search another state, or district. The user can find easily understand th cases information due to in this I used Fusion Charts ['charts Library'] .",
-          "image": "corona.png",
-          "demoUrl": "https://coronaweb.netlify.app/",
-          "githubUrl": "https://github.com/jagan9/Corona-Tracker"
+          "id": "passkeys",
+          "title": "Passkeys with Go",
+          "description": "A full-stack authentication demo using Go and React to explore passkeys (WebAuthn) alongside traditional password login. Integrated secure passkey flows with go-webauthn, handled session management using Redis, and added features like email verification, account and passkey management, and Argon2id password hashing. Designed mainly for learning and experimenting with modern auth flows.",
+          "image": "passkeys.png",
+          "demoUrl": "https://github.com/baala3/passkeys",
+          "githubUrl": "https://github.com/baala3/passkeys"
         }
       ]
     },

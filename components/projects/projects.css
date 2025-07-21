@@ -104,7 +104,7 @@
     
     border: 1px solid #fff;
     background-position: center center;
-    background-image: url('assets/images/118-1185326_computer-frames-for-youtube-videos-png (1).png');
+    background-image: url('assets/images/computer-frames-for-youtube-videos_1.png');
   }
   .project-img img{
     object-fit: contain;
@@ -144,6 +144,7 @@
   border-radius: 5px;
 }
 .pro-buttons {
+  cursor: pointer;
   padding: 10px;
   margin-left: 10px;
 }

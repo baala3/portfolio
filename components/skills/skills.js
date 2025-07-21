@@ -45,6 +45,7 @@ function generateSkillIcons() {
         img.ondragstart = drag;
         img.src = `../../assets/images/skills/${skill.id}.png`;
         img.alt = skill.title;
+        img.style.cursor = "pointer";
         iconsContainer.appendChild(img);
       });
 
