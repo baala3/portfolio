@@ -35,26 +35,26 @@
         {
           "id": "moretostore",
           "title": "More to Store",
-          "description": "More-To-Store is an app where you can buy items like flipkart, Amazon.Technologies used:Firebase Libraries(Realtime database,storage,Authentication),Android Architecture components(View Pager,Recycler withmultiple Items). Architecture used:MVC",
+          "description": "More-To-Store is a simple shopping app I built during college, inspired by platforms like Flipkart and Amazon. It lets users browse and purchase items. On the backend, I used Firebase (Realtime Database, Storage, and Authentication), while the frontend is built using Android Architecture Components like ViewPager and RecyclerView (with multi-item support). The app follows a basic MVC architecture for better code management.",
           "image": "app0.png",
           "demoUrl": "https://appetize.io/app/q1edkvrn3p9r3g13x8h0qx5904?device=nexus5&scale=75&orientation=portrait&osVersion=8.1",
           "githubUrl": "https://github.com/baala3/moreToStore"
         },
         {
-          "id": "socialnetwork",
-          "title": "Social Network",
-          "description": "A simple social media app including chat feature and also this lets the users able to post. It has the following features :user login, sign up, and authentication Customize your user profile and their posts Following and unfollowing othersLiking, commenting, and saving other users posts; Technologies used : Java/XML,Firebase realtime databases and Firebase Authentication and Android Architecture components",
+          "id": "connectify",
+          "title": "Connectify",
+          "description": "A basic social media app during college with features like chatting and posting, similar to Instagram. Users can sign up, log in, customize their profiles, follow/unfollow others, and interact with posts (like, comment, save). It’s developed using Java/XML, Firebase Realtime Database, Firebase Authentication, and Android Architecture Components for handling UI and data flow.",
           "image": "app1.png",
           "demoUrl": "https://appetize.io/app/q3g294nb7ymgy3a94wn8meky4w?device=nexus5&scale=75&orientation=portrait&osVersion=8.1",
-          "githubUrl": "https://github.com/baala3/SocialNetwork"
+          "githubUrl": "https://github.com/baala3/connectify"
         },
         {
           "id": "weather",
           "title": "Weather",
-          "description": "Weatherapp is a simple weather forecast app, which uses some APIs to fetch 5 day / 3 hour forecast data from the OpenWeatherMap and to fetch places,cities,counties,coords etc.",
+          "description": "WeatherApp is a simple weather forecast app I built, which pulls 5-day/3-hour forecast data using APIs from OpenWeatherMap. It also supports searching places, cities, countries, and coordinates for weather info. The app handles API integration for fetching and parsing weather data.",
           "image": "app2.png",
           "demoUrl": "https://appetize.io/app/q9e1mrnphbm14p7d02wq4ujqx8?device=nexus5&scale=75&orientation=portrait&osVersion=8.1",
-          "githubUrl": "https://github.com/jagan9/Corona-Tracker"
+          "githubUrl": "https://github.com/baala3/android-java-projects/tree/main/weather-app"
         }
       ]
     }

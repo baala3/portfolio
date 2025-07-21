@@ -207,3 +207,12 @@
   margin-top: 30px;
   object-fit: fill;
 }
+
+.android-note {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f87171;
+  opacity: 0.6;
+  font-family: "Inter", sans-serif;
+  margin-left: 15px;
+}
