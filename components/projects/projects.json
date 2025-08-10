@@ -4,20 +4,12 @@
       "name": "Web Projects",
       "projects": [
         {
-          "id": "graphalogvisualizer",
-          "title": "Graph Algorithm Visualiser",
-          "description": "A web-based interactive tool to visualize graph algorithms as part of learning Data Structures and Algorithms. It supports BFS, DFS, MST, and Dijkstra’s algorithms, with real-time visualization using React, Fluent UI, and SVG graphics. The project focuses on helping users understand how these algorithms work step-by-step. Deployed on Vercel.",
-          "image": "graphalogvisualizer.png",
-          "demoUrl": "https://graph-algo-visualizer-mocha.vercel.app/",
-          "githubUrl": "https://github.com/baala3/graph-algo-visualizer"
-        },
-        {
-          "id": "foodwaste",
-          "title": "Food Waste Management",
-          "description": "Food Waste Management is a full stack web application that enable user to login and post the food availability in their areas or known location. And any one to see the post from other people and able to track the location and directions from their current location. Tech Stack used: MongoDB, (Mongoose), Node.js, React, Express,Material-UI, Mapbox-gl, ftp-mail, JWT (Authentication), Redux, (React-Redux), React-swipeable-views",
-          "image": "foodwaste.png",
-          "demoUrl": "https://food-waste-managements.netlify.app/#/",
-          "githubUrl": "https://github.com/baala3/food-waste-management-client"
+          "id": "passkeys",
+          "title": "Passkeys with Go",
+          "description": "A full-stack authentication demo using Go and React to explore passkeys (WebAuthn) alongside traditional password login. Integrated secure passkey flows with go-webauthn, handled session management using Redis, and added features like email verification, account and passkey management, and Argon2id password hashing. Designed mainly for learning and experimenting with modern auth flows.",
+          "image": "passkeys.png",
+          "demoUrl": "https://github.com/baala3/passkeys",
+          "githubUrl": "https://github.com/baala3/passkeys"
         },
         {
           "id": "rubysamlauth",
@@ -28,12 +20,20 @@
           "githubUrl": "https://github.com/baala3/ruby_saml_auth"
         },
         {
-          "id": "passkeys",
-          "title": "Passkeys with Go",
-          "description": "A full-stack authentication demo using Go and React to explore passkeys (WebAuthn) alongside traditional password login. Integrated secure passkey flows with go-webauthn, handled session management using Redis, and added features like email verification, account and passkey management, and Argon2id password hashing. Designed mainly for learning and experimenting with modern auth flows.",
-          "image": "passkeys.png",
-          "demoUrl": "https://github.com/baala3/passkeys",
-          "githubUrl": "https://github.com/baala3/passkeys"
+          "id": "graphalogvisualizer",
+          "title": "Graph Algorithm Visualiser",
+          "description": "A web-based interactive tool to visualize graph algorithms as part of learning Data Structures and Algorithms. It supports BFS, DFS, MST, and Dijkstra’s algorithms, with real-time visualization using React, Fluent UI, and SVG graphics. The project focuses on helping users understand how these algorithms work step-by-step. Deployed on Vercel.",
+          "image": "graphalogvisualizer.png",
+          "demoUrl": "https://graph-algo-visualizer-mocha.vercel.app/",
+          "githubUrl": "https://github.com/baala3/graph-algo-visualizer"
+        },
+        {
+          "id": "hunger-aid",
+          "title": "Hunger Aid",
+          "description": "A full-stack web app that lets restaurants and users post available surplus food in their area; local charities can browse, search, and get directions to pickup points. Tech Stack: MongoDB (Mongoose), Node.js, Express, React, Redux (React-Redux), Material-UI, Mapbox GL, JWT (Auth), ftp-mail, React Swipeable Views.",
+          "image": "hunger-aid.png",
+          "demoUrl": "https://hunger-aid.netlify.app/",
+          "githubUrl": "https://github.com/baala3/hunger-aid-frontend"
         }
       ]
     },

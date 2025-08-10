@@ -27,8 +27,6 @@ Using a local server (like `http-server` or Python's server) serves files over H
 - Allows JavaScript to fetch local resources
 - Matches how the site will run in production
 
-* so use
-
 <details><summary>http-server to run on local</summary>
 <p>
 
@@ -42,6 +40,5 @@ http-server -p 8080
 # Then open in your browser
 # http://localhost:8080
 ```
-
 </p>
 </details>
