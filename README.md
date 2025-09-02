@@ -2,7 +2,7 @@
 
 A responsive personal portfolio website built using raw HTML, CSS, and JavaScript that showcases skills, projects, education, and experience in an interactive way.
 
-<img src="./assets/images/portfolio.png" alt="Medium" style="width: 535px; height: 350px;">
+<img src="./assets/images/portfolio.png" alt="Medium">
 
 - Developed during my college days.
 
@@ -10,7 +10,7 @@ A responsive personal portfolio website built using raw HTML, CSS, and JavaScrip
 
 <div style="text-align: center; display: flex; align-items: center;">
     <span style="font-size: 32px; margin-right: 8px;">☞</span> 
-    <a href="https://balashekhar.me">here</a>
+    <a href="https://dev.balashekhar.me">here</a>
 </div>
 
 ### note:
