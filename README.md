@@ -38,7 +38,7 @@ npm install -g http-server
 http-server -p 8080
 
 # Then open in your browser
-# http://localhost:8080
+http://localhost:8080
 ```
 </p>
 </details>

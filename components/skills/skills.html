@@ -1,68 +1,51 @@
-  <div data-aos="fade-up" class="skill-container">
-    <div class="skill-container1">
-      <h2>Skills</h2>
-      <p>
-        I've always been passionate about self-learning <br /> 
-        and exploring new technologies on my own,
-        as colleges often don't teach latest advancements.
-        <br /><br />"Exploring is something you have to do on your own"
-      </p>
-      <div class="skills-main-div">
-        <div class="skill-container-tabs">
-          <!-- Tabs will be generated dynamically -->
-        </div>
-        <!-- Skill icons will be generated dynamically -->
+<div data-aos="fade-up" class="skill-container">
+  <div class="skill-container1">
+    <h2>Skills</h2>
+    <p>
+      I've always been passionate about self-learning <br />
+      and exploring new technologies on my own,
+      as colleges often don't teach latest advancements.
+      <br /><br />"Exploring is something you have to do on your own"
+    </p>
+    <div class="skills-main-div">
+      <div class="skill-container-tabs">
+        <!-- Tabs will be generated dynamically -->
       </div>
+      <!-- Skill icons will be generated dynamically -->
     </div>
-    <div class="dropskill-container">
-      <div class="drop-skill-wrapper">
-        <div class="drop-img">
-          <div
-            id="div1"
-            ondrop="drop(event)"
-            ondragover="allowDrop(event)"
-          ></div>
-          <h2 id="drop-title">Drop a Skill</h2>
+  </div>
+  <div class="dropskill-container">
+    <div class="drop-skill-wrapper">
+      <div class="drop-img">
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h2 id="drop-title">Drop a Skill</h2>
+      </div>
+      <div id="drop-text" class="drop-desc">
+        This is a skills record selector. It'll help you know about my skills
+        in an interactive way. Drag a skill from the skillset and drop in the
+        above circle! (Just tap on the skill if you are using a mobile phone)
+      </div>
+      <div class="drop-texts">
+        <div class="drop-projects">
+          <h4>Number of Projects <span id="drop-np">-</span></h4>
         </div>
-        <div id="drop-text" class="drop-desc">
-          This is a skills record selector. It'll help you know about my skills
-          in an interactive way. Drag a skill from the skillset and drop in the
-          above circle! (Just tap on the skill if you are using a mobile phone)
-        </div>
-        <div class="drop-texts">
-          <div class="drop-projects">
-            <h4>Number of Projects <span id="drop-np">-</span></h4>
-          </div>
 
-          <div class="drop-year">
-            <h4>Experience (years) <span id="drop-ex">-</span></h4>
-          </div>
+        <div class="drop-year">
+          <h4>Experience (years) <span id="drop-ex">-</span></h4>
         </div>
-        <div class="drop-bar">
-          <div class="drop-bar-line">
-            <div id="drop-bar-line-value" class="drop-bar-line-value"></div>
-          </div>
-          <img
-            id="drop-bar-level-img1"
-            src="../../assets/images/skills/beginner_level.png"
-            alt=""
-          />
-          <img
-            id="drop-bar-level-img2"
-            src="../../assets/images/skills/intermediate_level.png"
-            alt=""
-          />
-          <img
-            id="drop-bar-level-img3"
-            src="../../assets/images/skills/expert_level.png"
-            alt=""
-          />
+      </div>
+      <div class="drop-bar">
+        <div class="drop-bar-line">
+          <div id="drop-bar-line-value" class="drop-bar-line-value"></div>
         </div>
-        <div class="drop-level">
-          <span>Beginner</span>
-          <span>Intermediate</span>
-          <span>Expert</span>
-        </div>
+        <img id="drop-bar-level-img1" src="../../assets/images/skills/beginner_level.png" alt="" />
+        <img id="drop-bar-level-img2" src="../../assets/images/skills/intermediate_level.png" alt="" />
+        <img id="drop-bar-level-img3" src="../../assets/images/skills/expert_level.png" alt="" />
+      </div>
+      <div class="drop-level">
+        <span>Beginner</span>
+        <span>Intermediate</span>
+        <span>Expert</span>
       </div>
     </div>
   </div>
