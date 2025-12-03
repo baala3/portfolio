@@ -43,6 +43,7 @@ function generateSkillIcons() {
         img.id = skill.id;
         img.draggable = true;
         img.ondragstart = drag;
+        img.onclick = () => handleSkillClick(skill.id);
         img.src = `../../assets/images/skills/${skill.id}.png`;
         img.alt = skill.title;
         img.style.cursor = "pointer";
@@ -155,6 +156,33 @@ function addDetails(title, text, np, ex) {
   droptext.textContent = text;
   dropnp.textContent = np;
   dropex.textContent = ex;
+}
+
+// to handle skill click/tap on mobile
+function handleSkillClick(skillId) {
+  const dropDiv = document.getElementById("div1");
+  const skillImg = document.getElementById(skillId);
+  
+  if (dropDiv && skillImg) {
+    dropDiv.style.backgroundImage = `url(${skillImg.src})`;
+    const bar = document.getElementById("drop-bar-line-value");
+
+    // Find the skill in any category
+    let skill = null;
+    for (const category of Object.values(skillsData.categories)) {
+      const found = category.skills.find((s) => s.id === skillId);
+      if (found) {
+        skill = found;
+        break;
+      }
+    }
+
+    if (skill) {
+      addDetails(skill.title, skill.description, skill.np, skill.ex);
+      bar.style.width = `${skill.level}%`;
+      addscale(skill.level);
+    }
+  }
 }
 
 // to drop the skill
