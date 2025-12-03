@@ -183,7 +183,7 @@ function drop(ev) {
   } else {
     addDetails(
       "Drop a Skill",
-      "This is a skills record selector. It'll help you know about my skills in an interactive way. Drag a skill from the skillset and drop in the above circle! (Just tap on the skill if you are using a mobile phone)",
+      "This is a skill record selector. It'll help you know about my skills interactively. Drag a skill from the skill-set and drop in the above circle! (tap on the skill if you are using a mobile phone)",
       "-",
       "-"
     );
