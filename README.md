@@ -1,10 +1,10 @@
 ### portfolio
 
-A responsive personal portfolio website built using raw HTML, CSS, and JavaScript that showcases skills, projects, education, and experience in an interactive way.
+A personal portfolio website built using raw HTML, CSS, and JavaScript that showcases skills, projects, education, and experience in an interactive way.
 
 <img src="./assets/images/portfolio.png" alt="Medium">
 
-- Developed during my college days.
+- Developed during my college days as a part of learning web-development.
 
 ### See It Live
 
@@ -13,19 +13,18 @@ A responsive personal portfolio website built using raw HTML, CSS, and JavaScrip
     <a href="https://dev.balashekhar.me">here</a>
 </div>
 
-### note:
+### notes:
 
 **Opening `index.html` directly in a browser won't work properly because:**
 
 1. Modern browsers block local file access due to security restrictions (CORS policy)
 2. Features like loading the footer component require proper HTTP protocol
-3. A local server better simulates the production environment
 
 Using a local server (like `http-server` or Python's server) serves files over HTTP protocol, which:
 
 - Prevents CORS issues
 - Allows JavaScript to fetch local resources
-- Matches how the site will run in production
+- and better simulates the production environment
 
 <details><summary>http-server to run on local</summary>
 <p>
