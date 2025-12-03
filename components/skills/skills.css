@@ -63,6 +63,7 @@
   display: flex;
   margin-left: 5px;
   padding-bottom: 10px;
+  padding-top: 10px;
   overflow-x: scroll;
 }
 
@@ -78,6 +79,14 @@
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   background-color: #ffe7e7;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-container-logos img:hover,
+.skill-container-logos img:active {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
 }
 .drop-level {
   margin: 10px 20px;
@@ -103,6 +112,14 @@
     padding: 20px;
     margin-left: 0px !important;
   }
+  .skill-container1 h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .skill-container1 p {
+    font-size: 18px;
+    text-align: center;
+  }
   .dropskill-container {
     max-width: 100% !important;
     margin: 0px auto !important;
@@ -114,6 +131,71 @@
   .drop-skill-wrapper {
     padding: 0px;
     margin: 30px 0 20px 0;
+  }
+  .skill-container-logos {
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    padding: 10px;
+  }
+  .skill-container-logos img {
+    margin: 8px;
+    width: 45px;
+    height: 45px;
+  }
+  .skill-container-tabs {
+    text-align: center;
+    padding: 10px;
+  }
+  .skill-container-tabs a {
+    margin: 5px;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skill-container1 h2 {
+    font-size: 35px;
+  }
+  .skill-container1 p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .drop-img {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+  .drop-img h2 {
+    margin-left: 0;
+    margin-top: 15px;
+    font-size: 22px;
+  }
+  .drop-img div {
+    width: 100px;
+    height: 100px;
+  }
+  .drop-desc {
+    margin: 15px 20px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .drop-texts {
+    margin: 0 10px;
+  }
+  .drop-projects,
+  .drop-year {
+    margin: 10px;
+    font-size: 15px;
+  }
+  .drop-projects span,
+  .drop-year span {
+    font-size: 18px;
+  }
+  .skill-container-logos img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
   }
 }
 
