@@ -55,6 +55,12 @@ function switchTheme() {
 
       darkcss = document.getElementById("dark");
       darkcss.parentNode.removeChild(darkcss);
+      
+      // Force refresh contact background image
+      const contactElement = document.querySelector('.contact');
+      if (contactElement) {
+        contactElement.style.backgroundImage = 'url("../../assets/images/contact/bg.png")';
+      }
     }
   });
 
