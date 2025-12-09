@@ -89,7 +89,7 @@ a:hover {
   color: #000 !important;
 }
 .contact {
-  background-image: url("../../assets/images/contact/dark_bg.png");
+  background-image: url("../../assets/images/contact/dark_bg.png") !important;
   background-repeat: no-repeat !important;
 }
 .experience-container-bubbles div {
