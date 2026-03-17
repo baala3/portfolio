@@ -1,3 +1,7 @@
+.blog-button button {
+  bottom: 50px !important;
+}
+
 .footer-button button {
   outline: none;
   color: #182d6c;
@@ -113,7 +117,7 @@
 
 .theme {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   right: 0;
   z-index: 200;
 }
@@ -124,7 +128,6 @@
   padding: 10px;
   margin-right: 30px;
   letter-spacing: 3px;
-  margin-bottom: 30px;
   border: 1.5px solid black;
   border-radius: 20px;
   color: #fff;
